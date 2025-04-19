@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Service Monitoring Dashboard</title>
+    {% load static %}
+    <script src="{% static 'django_cloud/echarts.min.js' %}"></script>
+    <script src="{% static 'django_cloud/metrics.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'django_cloud/metrics.css' %}">
+</head>
+<body>
+<div class="container">
+    <div class="tabs">
+        <div class="tab active" data-tab="overview">Services Overview</div>
+        <div class="tab" data-tab="detail">Detailed Monitoring</div>
+    </div>
+
+    <!-- Service Overview Page -->
+    <div id="overview" class="tab-content">
+        <div class="service-grid" id="serviceGrid">
+            <!-- Service cards will be dynamically generated via JavaScript -->
+        </div>
+    </div>
+
+    <!-- Detailed Monitoring Page -->
+    <div id="detail" class="tab-content hidden">
+        <!-- Detail charts will be dynamically generated via JavaScript -->
+    </div>
+</div>
+</body>
+</html> 

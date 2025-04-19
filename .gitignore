@@ -1,0 +1,11 @@
+.idea/
+.vscode/
+poetry.lock
+*.pyc
+__pycache__/
+dist/
+*.egg-info/
+/tests/server/db.sqlite3
+/tests/server/db.sqlite3-journal
+/tests/service/db.sqlite3
+/tests/service/db.sqlite3-journal

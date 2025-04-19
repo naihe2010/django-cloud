@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "django-cloud"
+version = "0.1.0"
+description = "Django cloud utility"
+authors = ["Alf <naihe2010@126.com>"]
+license = "GPL"
+readme = "README.md"
+packages = [
+    { include = "django_cloud" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[dependencies]
+Django = "^5.1"
+requests = "^2.31"
+psutil ="^7.0.0"

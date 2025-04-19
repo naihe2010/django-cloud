@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0f1c3c;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    background: #1a2b4d;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.tab.active {
+    background: #2a3f6f;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background: #1a2b4d;
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.service-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.service-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.service-status {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.status-up {
+    background: #2ecc71;
+}
+
+.status-down {
+    background: #e74c3c;
+}
+
+.chart-container {
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+.detail-chart {
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
